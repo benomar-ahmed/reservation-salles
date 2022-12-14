@@ -10,13 +10,14 @@
     <header>
         <nav>
             <ul>
-                <li><a href="">Accueil</a></li>
-                <li><a href="">Inscription</a></li>
-                <li><a href="">Connexion</a></li>
-                <li><a href="">Profil</a></li>
+                <li><a href="index.php">Accueil</a></li>
+                <li><a href="inscription.php">Inscription</a></li>
+                <li><a href="connexion.php">Connexion</a></li>
+                <li><a href="profil.php">Profil</a></li>
                 <li><a href="">Planning</a></li>
                 <li><a href="">Reservation</a></li>
                 <li><a href="">Reservation-form</a></li>
+                <li><a href="deconnexion.php">Deconnexion</a></li>
             </ul>
         </nav>
     </header>
