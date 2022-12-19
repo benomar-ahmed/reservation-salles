@@ -14,9 +14,9 @@
                 <li><a href="inscription.php">Inscription</a></li>
                 <li><a href="connexion.php">Connexion</a></li>
                 <li><a href="profil.php">Profil</a></li>
-                <li><a href="">Planning</a></li>
+                <li><a href="planning.php">Planning</a></li>
                 <li><a href="">Reservation</a></li>
-                <li><a href="">Reservation-form</a></li>
+                <li><a href="reservation-form">Reservation-form</a></li>
                 <li><a href="deconnexion.php">Deconnexion</a></li>
             </ul>
         </nav>
