@@ -41,33 +41,38 @@ if(isset($_POST["inscription"])){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="file.css">
     <title>Connexion</title>
 </head>
 <body>
     
     <?php require 'header.php' ?>
 
-    <main>
-        <form action="" method="post">
+    <main id="main-connexion">
+        
+        <form action="" method="post" id="form-connexion">
 
-            <label for="login">Login :</label>
-            <input type="text" name="login" id="" required="required">
+            <label for="login" class="label-connexion">Login :</label>
+            <input type="text" name="login" id="" required="required" class="element-connexion">
 
-            <label for="password">Password :</label>
-            <input type="password" name="password" id=""  required="required">
+            <label for="password" class="label-connexion">Password :</label>
+            <input type="password" name="password" id=""  required="required" class="element-connexion">
 
-            <input type="submit" value="Se connecter" name="submit">
+            <input type="submit" value="Se connecter" name="submit" id="submit-connexion">
+
+            <!--  Affichage message d'erreur avec PHP  -->
+            <?php foreach($msg as $message):?>
+            <div id="msg-error" style="color:red;"><?php echo ($message); ?></div>
+            <?php endforeach; ?>
+            
         </form>
-        <form action="" method="post">
-            <button name="inscription">
+        <form action="" method="post" id="form-connnexion2">
+            <button name="inscription" id="header-inscription">
                 Créer un compte
             </button>
         </form>
 
-        <!--  Affichage message d'erreur avec PHP  -->
-        <?php foreach($msg as $message):?>
-           <div><?php echo ($message); ?></div>
-         <?php endforeach; ?>
+        
     </main>
 
     <?php require 'footer.php' ?>

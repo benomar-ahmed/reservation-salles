@@ -1,0 +1,211 @@
+/*####################################################################################*/
+/*####################################################################################*/
+/*###############################     B O D Y       ##################################*/
+/*####################################################################################*/
+/*####################################################################################*/
+
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+/*####################################################################################*/
+/*####################################################################################*/
+/*###############################     M A I N       ################################*/
+/*####################################################################################*/
+/*####################################################################################*/
+
+/*#######   INDEX.PHP   #######*/
+
+#main-index {
+    padding: 17.8%;
+    text-align: center;
+}
+
+
+/*#######   INSCRIPTION.PHP     #######*/
+
+#main-inscription {
+    padding: 10.75%;
+}
+
+#form-inscription{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+    
+}
+
+.label-inscription{
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
+
+.element-inscription{
+    width: 40%;
+}
+
+#submit-inscription{
+    background: transparent;
+    margin: 1%;
+    border: 2px solid black;
+    width: 15%;
+    padding: 1%;
+}
+
+
+/*########  CONNEXION.PHP   #######*/
+
+#main-connexion {
+    padding: 6.9%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#form-connexion{
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+
+#form-connnexion2{
+    padding: 13.8%;
+    display: flex;
+    justify-content: center;
+    box-shadow: 5px 1px 10px rgba(0,0,0,0.2);
+}
+
+.element-connexion{
+    width: 160%;
+}
+
+.label-connexion{
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+
+#submit-connexion{
+    background: transparent;
+    margin-top: 10%;
+    border: 2px solid black;
+    width: 150%;
+    padding: 5%;
+}
+
+#header-inscription{
+    background: transparent;
+    margin-top: 5%;
+    border: 2px solid black;
+    width: 150%;
+    padding: 5%;
+}
+
+#msg-error{
+    font-size: 100%;
+}
+
+
+/*#######   PROFIL.PHP  #######*/
+
+#main-profil {
+    padding: 6.45%;
+    display: flex;
+    justify-content: center;
+}
+
+#form-profil {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5%;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+
+.label-profil{
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+
+.element-profil{
+    width: 100%;
+}
+
+#submit-profil{
+    background: transparent;
+    margin-top: 10%;
+    border: 2px solid black;
+    width: 100%;
+    padding: 5%;
+}
+
+
+/*#########     RESERVATION-FORM.PHP    #######*/
+
+#body-reservation-form{
+    
+}
+
+#main-reservation-form{
+    padding: 2.05%;
+    display: flex;
+    justify-content: center;
+}
+
+#form-reservation-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6%;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+
+.label-reservation-form {
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+
+.element-reservation-form {
+    width: 150%;
+}
+
+#description-reservation-form{
+    padding: 10%;
+    width: 150%;
+    white-space:normal;
+}
+
+#element-heure-debut{
+    width: 50%;
+    background: transparent;
+    border : 2px solid black;
+}
+
+#element-heure-fin{
+    width: 50%;
+    background: transparent;
+    border : 2px solid black;
+}
+
+#submit-reservation-form{
+    background: transparent;
+    margin-top: 10%;
+    border: 2px solid black;
+    width: 100%;
+    padding: 5%;
+}
+
+/*#######   PLANNIG.PHP     #######*/
+
+#main-planning{
+    padding: 14.54%;
+}

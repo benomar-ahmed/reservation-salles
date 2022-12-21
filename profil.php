@@ -27,8 +27,6 @@ if(isset($_POST['submit'])){
 
 
 
-
-
 ?>
 
 
@@ -39,27 +37,28 @@ if(isset($_POST['submit'])){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="file.css">
     <title>Profil</title>
 </head>
 <body>
     <?php require 'header.php' ?>
 
-    <main>
-        <form action="" method="post">
+    <main id="main-profil">
+        <form action="" method="post" id="form-profil">
             
-            <label for="login">Login actuel :</label>
-            <input type="text" name="login" id="" value=<?php echo $_SESSION['login'] ?>>
+            <label for="login" class="label-profil">Login actuel :</label>
+            <input type="text" name="login" class="element-profil" value=<?php echo $_SESSION['login'] ?>>
 
-            <label for="password">Votre mot de passe actuel :</label>
-            <input type="password" name="password" id="" required="required">  
+            <label for="password" class="label-profil">Votre mot de passe actuel :</label>
+            <input type="password" name="password" class="element-profil" required="required">  
 
-            <label for="new-login">Tapez votre nouveau login :</label>
-            <input type="text" name="new-login" id="" required="required">
+            <label for="new-login" class="label-profil">Tapez votre nouveau login :</label>
+            <input type="text" name="new-login" class="element-profil" required="required">
 
-            <label for="new-password">Tapez votre nouveau mot de passe :</label>
-            <input type="password" name="new-password" id="" required="required">
+            <label for="new-password" class="label-profil">Tapez votre nouveau mot de passe :</label>
+            <input type="password" name="new-password" class="element-profil" required="required">
 
-            <input type="submit" value="Modifier" name="submit">
+            <input type="submit" value="Modifier" name="submit" id="submit-profil">
         </form>
 
         <!--  Affichage message d'erreur avec PHP  -->

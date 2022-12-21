@@ -1,5 +1,6 @@
 <?php
 
+session_start();
 require 'connect.php';
 // $i=12;
 
@@ -15,31 +16,31 @@ $jour = ["Lundi","Mardi","Mercredi","Jeudi","Vendredi","Samedi","Dimanche"];
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="file.css">
     <title>Planning</title>
 </head>
 <body>
-    <main>
+
+    <?php require 'header.php' ?>
+
+
+    <main id="main-planning">
         <table>
-        <thead>
-            <tr>
-                <?php for ($i = 0; $i <7 ; $i++):?>
-                    <?= $jour[$i]?>
-                    <?php for ($j = 8; $j < 20; $j++): ?>
-                    
-                        <td><?= $j  ?></td>
+            <thead>
+                <tr>
+                    <?php for ($i = 0; $i <7 ; $i++):?>
+                        <?= $jour[$i]?>
+                        <?php for ($j = 8; $j < 20; $j++): ?>
+                            <td><?= $j  ?></td>
+                        <?php endfor ?>
+                        </tr>
+                        <?php endfor ?>
 
-                    
-                    <?php endfor ?>
-                    </tr>
-                    <?php endfor ?>
-
-
-
-            
-        </thead>
+            </thead>
             
         </table>
     </main>
+
+    <?php require 'footer.php' ?>
 </body>
 </html>

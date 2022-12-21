@@ -11,11 +11,11 @@ if(isset($_POST['submit'])){
 
     $login = $_POST['login'];
     $password = $_POST['password'];
+    $verify_password = $_POST['verify-password'];
 
     /*#######   Conditions gestions d'erreurs   #######*/
 
-    if(isset($password) == $_POST['verify-password']){      /*#######   Si le password est le même que le verify-password on entre dans la boucle   #######*/
-
+    if($password == $verify_password){      /*#######   Si le password est le même que le verify-password on entre dans la boucle   #######*/
         $requete = mysqli_query($mysqli,"SELECT login FROM utilisateurs WHERE login='$login'");     /*#######   Requête pour savoir s'il existe déjà un utilisateur du même nom     #######*/
         $row = $requete->fetch_all();
 
@@ -47,31 +47,32 @@ if(isset($_POST['submit'])){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="file.css">
     <title>Inscription</title>
 </head>
 <body>
     <?php require 'header.php' ?>
 
-    <main>
-        <form action="" method="post">
+    <main id="main-inscription">
+        <form action="" method="post" id="form-inscription">
 
-            <label for="login">Login :</label>
-            <input type="text" name="login" id="" required="required">
+            <label for="login" class="label-inscription">Login :</label>
+            <input type="text" name="login"required="required" class="element-inscription">
 
-            <label for="password">Password :</label>
-            <input type="password" name="password" id="" required="required">
+            <label for="password" class="label-inscription">Password :</label>
+            <input type="password" name="password"required="required" class="element-inscription">
 
-            <label for="verify-password">Retapez le password</label>
-            <input type="password" name="verify-password" id="" required="required">
+            <label for="verify-password" class="label-inscription">Retapez le password :</label>
+            <input type="password" name="verify-password" required="required" class="element-inscription">
 
-            <input type="submit" value="S'inscrire" name="submit">
+            <input type="submit" value="S'inscrire" name="submit" id="submit-inscription">
 
         </form>
 
         <!--  Affichage message d'erreur avec PHP  -->
         <?php foreach($msg as $message):?>
-           <div><?php echo ($message); ?></div>
-         <?php endforeach; ?>
+           <div style="color:red;"><?php echo ($message); ?></div>
+        <?php endforeach; ?>
 
     </main>
 
