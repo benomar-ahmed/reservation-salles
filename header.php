@@ -16,7 +16,7 @@
                 <li><a href="profil.php">Profil</a></li>
                 <li><a href="planning.php">Planning</a></li>
                 <li><a href="">Reservation</a></li>
-                <li><a href="reservation-form">Reservation-form</a></li>
+                <li><a href="reservation-form.php">Reservation-form</a></li>
                 <li><a href="deconnexion.php">Deconnexion</a></li>
                 <?php else: ?>
                 <li><a href="index.php">Accueil</a></li>
